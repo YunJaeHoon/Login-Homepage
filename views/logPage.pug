@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title log
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(href='/style/logPage.css' rel='stylesheet')
+
+    // 폰트
+    link(href='https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css' rel='stylesheet')
+
+  body
+    #container
+      #titleText_area 회원정보
+
+      ul#text_area
+        li.texts 아이디 : #{id}
+        li.texts 닉네임 : #{nickname}
+        li.texts 한줄 소개 : #{introduce}
+      #button_area
+      
+        form.buttons(action='/log/edit' method='post')
+          input(type='hidden' name='id' value=id)
+          input#edit_button.input(type='submit' value='회원정보 수정')
+        form.buttons(action='/log/delete' method='post')
+          input(type='hidden' name='id' value=id)
+          input#delete_button.input(type='submit' value='회원정보 삭제')

@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title login
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(href='/style/mainPage.css' rel='stylesheet')
+
+    // 폰트
+    link(href='https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css' rel='stylesheet')
+
+  body
+    #container
+      #titleText_area Login
+
+      form#input_area(action='/log' method='post')
+        input.input.enter_text(type='text' name='id' placeholder='아이디')
+        input.input.enter_text(type='password' name='password' placeholder='비밀번호')
+        input#login_button.input(type='submit' value='로그인')
+        br
+        div(style='color: red;') #{comment}
+
+      #text_area
+        span(style='color: gray; margin-right: 5px;') 계정이 아직 없으신가요?
+        a(style='text-decoration-line: none; color: rgb(45, 45, 45); font-weight: bold;' href='/signUp') 회원가입 

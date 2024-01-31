@@ -1,0 +1,85 @@
+* {
+  /* 사이즈 조절 용이성을 위한 box-sizing 속성 조절 */
+  box-sizing: border-box;
+
+  font-family: 'NanumSquareNeo';
+}
+
+body {
+  /* body가 화면을 꽉 채우기 위한 코드 */
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fffdf4;
+}
+
+#container {
+  /* container의 내부 요소들이 가운데로 위치하기 위한 코드 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 1000px;
+}
+
+#titleText_area {
+  text-align: center;
+  font-size: 72px;
+  color: rgb(255, 183, 0);
+}
+
+#text_area {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 50px;
+  margin: 30px 0px;
+  width: 90%;
+
+  list-style-type: circle;
+
+  font-size: 36px;
+}
+
+.texts {
+  margin: 15px 0px;
+}
+
+#button_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 90%;
+}
+
+.buttons {
+  margin: 0px 10px;
+}
+
+.input {
+  width: 200px;
+  height: 50px;
+
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+#edit_button {
+  background-color: rgb(255, 183, 0);
+  color: rgb(32, 32, 32);
+}
+
+#delete_button {
+  background-color: rgba(149, 82, 0, 0.912);
+  color: rgb(255, 255, 255);
+}

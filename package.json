@@ -1,0 +1,20 @@
+{
+  "name": "2.-login-homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "compression": "^1.7.4",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "mysql": "^2.18.1",
+    "pug": "^3.0.2"
+  }
+}
